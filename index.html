@@ -22,7 +22,15 @@
      
   </style> 
   <body id="body">
-    <div>
+  <div class="d-flex p-4">
+    <div class="col-2"></div>
+   
+      <!-- <div class="col-8" style="border: 1px solid white; text-align: center;"><img src="image/m2.jpg" width="500px" style="border-radius: 10px;" class="img-fluid" alt="Responsive image"></div> -->
+      <div class="col-2">
+        <img id="wish" src="image/m2.jpg"  width="750px" alt="">
+      </div>
+  </body>
+  </div>
 
 
      
@@ -31,33 +39,49 @@
       <script>
          function  view(data){
              // var element = document.getElementsByTagName("button")
-             if (data === 'Y'){
+             if (data === 'sir'){
                  // document.getElementById('wish').innerHTML = element[1].innerHTML;
-                 document.getElementById('wish').innerHTML = "I am X";
+                 document.getElementById('wish').src = "juluImg/sir.png";
              }
-             else if(data === 'A'){
-                 document.getElementById('wish').innerHTML = "I am A";
+             else if(data === 'Titlidi'){
+                 document.getElementById('wish').src = "juluImg/cipudi.png";
              }
-             else if(data === 'B'){
-                 document.getElementById('wish').innerHTML = "I am B";
+             else if(data === 'Riyadi'){
+                 document.getElementById('wish').src = "juluImg/riyadi.png";
              }
-             else if(data === 'C'){
-                 document.getElementById('wish').innerHTML = "I am C";
+             else if(data === 'Mounita'){
+                 document.getElementById('wish').src = "juluImg/mounita.png";
              }
+             else if(data === 'Annie'){
+                 document.getElementById('wish').src = "juluImg/annie.png";
+             }
+             else if(data === 'Moupiya'){
+                 document.getElementById('wish').src = "juluImg/moupriya.png";
+             }
+              else if(data === 'Priyom'){
+                 document.getElementById('wish').src = "juluImg/priyam.png";
+             }
+             else if(data === 'Ritaja'){
+                 document.getElementById('wish').src = "juluImg/ritaja.png";
+             }
+             else if(data === 'Srishti'){
+                 document.getElementById('wish').src = "juluImg/sristi.png";
+             }
+             
 
-          }
+            }
       </script>
         <div>
-          <p id="wish"></p>
-          <button class="btn btn-primary"  onclick="view('Y')">Sir</button>
-          <button class="btn btn-secondary"  onclick="view('A')">Titlidi</button>
-          <button class="btn btn-success"  onclick="view('B')">Riyadi</button>
-          <button  class="btn btn-danger"   onclick="view('C')">Mounita</button>
-          <button  class="btn btn-secondary"   onclick="view('C')">Annie</button>
-          <button  class="btn btn-primary"   onclick="view('C')">Moupiya</button>
-          <button  class="btn btn-secondary"   onclick="view('C')">Priyom</button>
-          <button  class="btn btn-success"   onclick="view('C')">Ritaja</button>
-          <button  class="btn btn-danger"   onclick="view('C')">Srishti</button>
+          <p id="wish_div"></p>
+          <button class="btn btn-primary"  onclick="view('sir')">Sir</button>
+          <button class="btn btn-secondary"  onclick="view('Titlidi')">Titlidi</button>
+          <button class="btn btn-success"  onclick="view('Riyadi')">Riyadi</button>
+          <button  class="btn btn-danger"   onclick="view('Mounita')">Mounita</button>
+          <button  class="btn btn-secondary"   onclick="view('Annie')">Annie</button>
+          <button  class="btn btn-primary"   onclick="view('Moupiya')">Moupiya</button>
+          <button  class="btn btn-secondary"   onclick="view('Priyom')">Priyom</button>
+          <button  class="btn btn-success"   onclick="view('Ritaja')">Ritaja</button>
+          <button  class="btn btn-danger"   onclick="view('Srishti')">Srishti</button>
 
 
         </div>
