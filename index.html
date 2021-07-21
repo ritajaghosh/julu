@@ -11,10 +11,15 @@
     <title>Happy Birthday Dear</title>
     <style>
     #body{
-      background-image: url("image/bgimg.jpg");
+      background-image: url("image/birthday_img.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
+    }
+    #Happy{
+        color: rgb(104, 112, 228);
+        font-style: oblique;
+        font-size: 45px;
     }
     
 
@@ -28,12 +33,27 @@
       <!-- <div class="col-8" style="border: 1px solid white; text-align: center;"><img src="image/m2.jpg" width="500px" style="border-radius: 10px;" class="img-fluid" alt="Responsive image"></div> -->
       <div class="col-2">
         <img id="wish" src="image/m2.jpg"  width="750px" alt="">
+        <!-- <img id="wish" src="image/butterfly_img.gif"  width="300px" alt=""> -->
         <p id="page" style="text-align: center;">1</p>
-        <button id="next-button" onclick="view()">next</button>
-        <button   id="prev-button"onclick="prevView()" style="visibility: hidden;">prev</button>
+        <button id="next-button" onclick="view()"type="button" class="btn btn-light">next</button>
+        <button   id="prev-button"onclick="prevView()" style="visibility: hidden;" type="button" class="btn btn-light">prev</button>
       </div>
+      <div class="header-image">
+        <div class="profile-image" style="margin: 20px auto;">
+            <!-- <img src="image/m2.jpg" class="img-responsive" width="200"/> -->
+            <img src="image/butterfly_img.gif" class="img-circle img-responsive img-on-top" width="150">
+        </div>
+        </div>
+        
+        
+</div>
   </body>
+<div id="Happy">
+    <p><b>Wishing you a very happy Birthday<b></p>
+</div>
+  
   </div>
+  
 
 
      
@@ -161,5 +181,8 @@
     <a href="index2.html"><button type="button" class="btn btn-link">gallery</button></a>
 
   </body>
+  <script type="javascript">
+     alert('fuj');       
+  </script>
   
 </html>
