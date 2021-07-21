@@ -28,6 +28,9 @@
       <!-- <div class="col-8" style="border: 1px solid white; text-align: center;"><img src="image/m2.jpg" width="500px" style="border-radius: 10px;" class="img-fluid" alt="Responsive image"></div> -->
       <div class="col-2">
         <img id="wish" src="image/m2.jpg"  width="750px" alt="">
+        <p id="page" style="text-align: center;">1</p>
+        <button id="next-button" onclick="view()">next</button>
+        <button   id="prev-button"onclick="prevView()" style="visibility: hidden;">prev</button>
       </div>
   </body>
   </div>
@@ -37,41 +40,99 @@
 
 
       <script>
-         function  view(data){
+         function  view(){
+
              // var element = document.getElementsByTagName("button")
-             if (data === 'sir'){
+            //  if (data === 'sir'){
+             if (document.getElementById("page").innerHTML==="1"){
                  // document.getElementById('wish').innerHTML = element[1].innerHTML;
                  document.getElementById('wish').src = "juluImg/sir.png";
+                 document.getElementById("page").innerHTML="2";
+                 document.getElementById("prev-button").style.visibility = 'visible';
              }
-             else if(data === 'Titlidi'){
+             else if(document.getElementById("page").innerHTML==="2"){
                  document.getElementById('wish').src = "juluImg/cipudi.png";
+                 document.getElementById("page").innerHTML="3";
              }
-             else if(data === 'Riyadi'){
+             else if(document.getElementById("page").innerHTML==="3"){
                  document.getElementById('wish').src = "juluImg/riyadi.png";
+                 document.getElementById("page").innerHTML="4";
+                 
              }
-             else if(data === 'Mounita'){
+             else if(document.getElementById("page").innerHTML==="4"){
                  document.getElementById('wish').src = "juluImg/mounita.png";
+                 document.getElementById("page").innerHTML="5";
              }
-             else if(data === 'Annie'){
+             else if(document.getElementById("page").innerHTML==="5"){
                  document.getElementById('wish').src = "juluImg/annie.png";
+                 document.getElementById("page").innerHTML="6";
              }
-             else if(data === 'Moupiya'){
+             else if(document.getElementById("page").innerHTML==="6"){
                  document.getElementById('wish').src = "juluImg/moupriya.png";
+                 document.getElementById("page").innerHTML="7";
              }
-              else if(data === 'Priyom'){
+              else if(document.getElementById("page").innerHTML==="7"){
                  document.getElementById('wish').src = "juluImg/priyam.png";
+                 document.getElementById("page").innerHTML="8";
              }
-             else if(data === 'Ritaja'){
+             else if(document.getElementById("page").innerHTML==="8"){
                  document.getElementById('wish').src = "juluImg/ritaja.png";
+                 document.getElementById("page").innerHTML="9";
              }
-             else if(data === 'Srishti'){
+             else if(document.getElementById("page").innerHTML==="9"){
                  document.getElementById('wish').src = "juluImg/sristi.png";
+                 document.getElementById("page").innerHTML="10";
+                 document.getElementById("next-button").style.visibility = 'hidden';
              }
              
 
             }
+        function  prevView(){ 
+          if (document.getElementById("page").innerHTML==="2"){
+                 // document.getElementById('wish').innerHTML = element[1].innerHTML;
+                 document.getElementById('wish').src = "image/m2.jpg";
+                 document.getElementById("page").innerHTML="1";
+                 document.getElementById("prev-button").style.visibility = 'hidden';
+
+             }
+             else if(document.getElementById("page").innerHTML==="3"){
+                 document.getElementById('wish').src = "juluImg/sir.png";
+                 document.getElementById("page").innerHTML="2";
+             }
+             else if(document.getElementById("page").innerHTML==="4"){
+                 document.getElementById('wish').src = "juluImg/cipudi.png";
+                 document.getElementById("page").innerHTML="3";
+                 
+             }
+             else if(document.getElementById("page").innerHTML==="5"){
+                 document.getElementById('wish').src = "juluImg/riyadi.png";
+                 document.getElementById("page").innerHTML="4";
+             }
+             else if(document.getElementById("page").innerHTML==="6"){
+                 document.getElementById('wish').src = "juluImg/mounita.png";
+                 document.getElementById("page").innerHTML="5";
+             }
+             else if(document.getElementById("page").innerHTML==="7"){
+                 document.getElementById('wish').src = "juluImg/annie.png";
+                 document.getElementById("page").innerHTML="6";
+             }
+              else if(document.getElementById("page").innerHTML==="8"){
+                 document.getElementById('wish').src = "juluImg/moupriya.png";
+                 document.getElementById("page").innerHTML="7";
+             }
+             else if(document.getElementById("page").innerHTML==="9"){
+                 document.getElementById('wish').src = "juluImg/priyam.png";
+                 document.getElementById("page").innerHTML="8";
+             }
+             else if(document.getElementById("page").innerHTML==="10"){
+                 document.getElementById('wish').src = "juluImg/ritaja.png";
+                 document.getElementById("page").innerHTML="9";
+                 document.getElementById("next-button").style.visibility = 'visible';
+                 document.getElementById("prev-button").style.visibility = 'visible';
+             }
+        }    
       </script>
-        <div>
+        <!-- <div>
           <p id="wish_div"></p>
           <button class="btn btn-primary"  onclick="view('sir')">Sir</button>
           <button class="btn btn-secondary"  onclick="view('Titlidi')">Titlidi</button>
@@ -84,7 +145,7 @@
           <button  class="btn btn-danger"   onclick="view('Srishti')">Srishti</button>
 
 
-        </div>
+        </div> -->
   </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
